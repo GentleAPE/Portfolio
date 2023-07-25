@@ -1,0 +1,202 @@
+<html>
+<head>
+    <title>Dating Site</title>
+    <style type="text/css">
+        body {
+            display: flex;
+            justify-content: right;
+            align-items: right;
+            height: 100vh;
+            background-image: url('iamge/cute-nicknames-for-girlfriends-1-1630007370.jpg'); /* Replace 'path/to/your/background-image.jpg' with the actual path to your background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #97fdec;
+            margin: 0; /* Remove default body margin */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center the h1 element horizontally */
+            max-width: 900px; /* Set a maximum width for the container if needed */
+        }
+
+        form {
+            background-color: #06f7f7;
+            border: 1px solid #dddddd;
+            padding: 30px;
+            width: 100%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            max-width: 720px; /* Adjust the width of the form if needed */
+        }
+
+        h1 {
+            margin: 30px 0; /* Add vertical margin for spacing */
+            color: #333333;
+            font-size: 50px; /* Increase font size for a more stylish look */
+            text-transform: uppercase; /* Convert text to uppercase */
+            letter-spacing: 2px; /* Add letter spacing for a more stylish look */
+            text-shadow: 2px 2px 4px rgba(243, 2, 2, 0.2); /* Add text shadow for a subtle effect */
+
+        fieldset {
+            border: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333333;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #666666;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .range-low,
+        .range-high {
+            text-align: center;
+            color: white;
+            display: inline-block;
+            width: 60px;
+            padding: 5px;
+            vertical-align: top;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .range-low {
+            background-color: red;
+        }
+
+        .range-high {
+            background-color: blue;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        img#preview {
+            max-width: 200px;
+            height: auto;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <h1>Love Connect</h1>
+          <form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" enctype="multipart/form-data" method="post">
+            <fieldset>
+              <legend>Your Face</legend>
+              <label for="your-image">Your Image:</label>
+              <input type="file" required><br />
+              <label for="image-preview">Image Preview:</label>
+              <img src="" id="preview" alt="Image Preview"><br />
+            </fieldset>
+        <fieldset>
+            <legend>Your General Details</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="Your full name" required><br />
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="male" required>
+            <label for="gender-male" class="options">Male</label>
+            <input type="radio" name="gender" value="female">
+            <label for="gender-female" class="options">Female</label><br />
+            <label for="age">Age:</label>
+            <input type="number" name="age" required><br />
+            <label for="dob">Date of birth:</label>
+            <input type="date" name="dob"><br />
+            <label for="fav-color">Favorite color:</label>
+            <input type="color" name="fav-color" value="#000000"><br />
+            <label for="country">Which country:</label>
+            <select name="country">
+                <option value="no-selection">no selection</option>
+                <option value="ID">Indonesia</option>
+                <option value="IN">India</option>
+                <option value="MY">Malaysia</option>
+                <option value="UK">United Kingdom</option>
+                <option value="US">United States</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Your Indicators</legend>
+            <label for="height">Height:</label>
+            <div class="range-low">Short</div><input type="range" name="height" min="0" max="100"><div class="range-high">Tall</div><br />
+            <label for="salary">Salary:</label>
+            <div class="range-low">Poor</div><input type="range" name="salary" min="0" max="100"><div class="range-high">Rich</div>
+        </fieldset>
+        <fieldset>
+            <legend>Your Contact Information</legend>
+            <label for="email">Email:</label>
+            <input type="email" name="email" required><br />
+            <label for="mobile">Mobile:</label>
+            <input type="tel" name="mobile"><br />
+            <label for="address">Address:</label>
+            <textarea name="address"></textarea><br />
+            <label for="method-to-contact">Method to contact you:</label>
+            <input type="checkbox">
+            <label class="options" for="contact-email">Email</label>
+            <input type="checkbox">
+            <label class="options" for="contact-whatsapp">WhatsApp</label>
+            <input type="checkbox">
+            <label class="options" for="contact-in-app-chat">In-app chat</label>
+        </fieldset>
+        <input type="submit">
+          </form>
+    </div>
+
+    <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+</body>
+</html>

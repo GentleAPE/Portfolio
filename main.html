@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Big Bite Donuts</title>
+  <style>
+    body {
+      font-family: monospace;
+      margin: 0;
+      padding: 0;
+      background-image: url('img/donuts-on-blue-background.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    header {
+      background-color: #fdc04d;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      margin: 0;
+      color: #333;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    nav {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    
+    nav ul li {
+      margin-right: 20px;
+    }
+    
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    main {
+      margin: 20px;
+    }
+    
+    h2 {
+      color: #333;
+      text-align: center;
+      font-size: 50px;
+    }
+    
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      text-align: center;
+    }
+    
+    ul.menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 20px;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    ul.menu-grid li {
+      text-align: center;
+    }
+    
+    ul.menu-grid li img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    ul.menu-grid li span {
+      display: block;
+      margin-top: 10px;
+    }
+    
+    footer {
+      background-color: #f8f8f8;
+      padding: 20px;
+      text-align: center;
+      color: #666;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="BigBite.png" alt="Big Bite Donuts Logo">
+    </div>
+    <h1></h1>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#locations">Locations</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <h2 id="home">Delicious Donuts</h2>
+    <p>Welcome to Big Bite Donuts! We are a delightful donut shop dedicated to satisfying your sweet tooth cravings. Our passion is crafting mouthwatering donuts that bring joy to every bite. Step into our inviting space and immerse yourself in the wonderful aroma of freshly baked goods.
+
+        At Big Bite Donuts, we offer a wide selection of delectable donuts that cater to every taste. Indulge in our classic glazed donut, a perfect balance of airy dough and a sweet glaze that melts in your mouth. For chocolate lovers, our chocolate sprinkle donut is a dream come true, adorned with a generous coating of rich chocolate and colorful sprinkles.
+        
+        Looking for a unique flavor experience? Try our maple bacon donut, a delightful combination of smoky bacon bits and the sweet warmth of maple syrup. If you prefer fruity and refreshing flavors, our strawberry frosted donut is sure to delight with its luscious strawberry icing. And for those who crave a burst of fruity goodness, our blueberry cake donut is a fluffy treat filled with bursts of juicy blueberries.
+        
+        At Big Bite Donuts, we take pride in using the finest ingredients to create our donuts, ensuring each bite is a moment of pure indulgence. We strive to provide a warm and friendly atmosphere where you can enjoy our scrumptious treats with friends, family, or as a well-deserved personal indulgence.
+        
+        Whether you're starting your day with a cup of freshly brewed coffee and a donut, or stopping by for an afternoon pick-me-up, Big Bite Donuts is here to satisfy your cravings. Our dedicated team of donut enthusiasts is ready to assist you in selecting the perfect treat or to answer any questions you may have.
+        
+        Visit our multiple locations across the city and experience the joy of Big Bite Donuts. We can't wait to serve you our delectable creations and make your day a little sweeter.</p>
+
+    <h2 id="menu" style="text-align: center;">Our Menu</h2>
+    <ul class="menu-grid">
+      <li>
+        <img src="img/classic_glazed.jpg" alt="Classic Glazed Donut">
+        <span>Classic Glazed</span>
+      </li>
+      <li>
+        <img src="img/chocolate-glazed-donuts-with-sprinkles.jpg" alt="Chocolate Sprinkle Donut">
+        <span>Chocolate Sprinkle</span>
+      </li>
+      <li>
+        <img src="img/paleo-gluten-free-maple-bacon-donuts-recipe_850x850r.jpg" alt="Maple Bacon Donut">
+        <span>Maple Bacon</span>
+      </li>
+      <li>
+        <img src="img/Strawberry-Glazed-Donuts-Recipe-39202-5daf3e4d1b-1644778726.jpg" alt="Strawberry Frosted Donut">
+        <span>Strawberry Frosted</span>
+      </li>
+      <li>
+        <img src="img/Blueberry-Cake-Donuts-12.jpg" alt="Blueberry Cake Donut">
+        <span>Blueberry Cake</span>
+      </li>
+    </ul>
+
+    <h2 id="locations" style="text-align: center;">Visit Us</h2>
+    <p>We have multiple locations across the city. Come and visit our nearest branch to enjoy our scrumptious donuts.</p>
+
+    <h2 id="contact" style="text-align: center;">Contact Us</h2>
+    <p>For any inquiries or feedback, feel free to reach out to us:</p>
+    <p>Email: info@bigbitedonuts.com</p>
+    <p>Phone: 123-456-7890</p>
+  </main>
+  
+  <footer>
+    &copy; 2023 Big Bite Donuts. All rights reserved.
+  </footer>
+</body>
+</html>
